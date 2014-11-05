@@ -1,0 +1,10 @@
+set number
+set relativenumber
+set cursorline
+set tabstop=4
+set shiftwidth=4
+set expandtab
+syntax on
+syntax enable
+set background=dark
+colorscheme elflord
