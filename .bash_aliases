@@ -1,0 +1,7 @@
+alias lt='ls -ahlt'
+alias gpom='git push origin master'
+alias glom='git pull origin master' 
+alias ga='git add'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias sag='sudo apt-get'
