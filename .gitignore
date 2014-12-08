@@ -1,0 +1,10 @@
+# ignore everything
+*
+
+# except for these files
+!.bash_aliases
+!.bashrc
+!.tmux.conf
+!.vimrc
+!.gitignore
+!.gitconfig

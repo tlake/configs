@@ -1,0 +1,5 @@
+[user]
+	email = tanner.lake@gmail.com
+	name = tlake
+[credential]
+	helper = cache --timeout=1800
