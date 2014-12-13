@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+files=(.bash_aliases .bashrc .gitconfig .gitignore .tmux.conf .vimrc)
+
+
+for each in ${files[*]}
+do
+    cp "$each" "~/"
+done
+
+
