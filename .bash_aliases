@@ -16,7 +16,7 @@ alias sagi='sag install'
 # git aliases
 
 alias gp='git push'
-alias gl='git  pull'
+alias gl='git pull'
 alias gpom='gp origin master'
 alias glom='gl origin master' 
 alias ga='git add'
