@@ -3,6 +3,9 @@
 # shell aliases
 
 alias lt='ls -ahlt'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
 ################
 
@@ -10,6 +13,9 @@ alias lt='ls -ahlt'
 
 alias sag='sudo apt-get'
 alias sagi='sag install'
+alias sagud='sag update'
+alias sagug='sag upgrade'
+alias sagdug='sag dist-upgrade'
 
 ################
 
@@ -23,5 +29,6 @@ alias ga='git add'
 alias gaa='ga -A'
 alias gc='git commit'
 alias gcm='gc -m'
+alias gs='git status'
 
 ################
