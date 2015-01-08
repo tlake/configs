@@ -30,5 +30,9 @@ alias gaa='ga -A'
 alias gc='git commit'
 alias gcm='gc -m'
 alias gs='git status'
+alias gf='git fetch'
+alias gfa='gf --all'
+alias gr='git reset'
+alias grhom='gr --hard origin/master'
 
 ################
