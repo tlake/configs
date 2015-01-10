@@ -1,10 +1,21 @@
-configs
-=======
+# configs
 
-Currently, the relocate script copies these  
-scripts to their proper home directories (at  
-present, this is just the home directory).  
-  
-To-Do: Look into the possibilty of sourcing  
-these configs for the terminal within the  
-relocation script?
+## To Pull Down:
+
+`git init` in home directory, then:  
+
+```
+git remote add origin http://github.com/tlake/configs  
+git fetch --all  
+git reset --hard origin/master  
+```
+
+
+## Other Things to Probably Install:
+### Through `apt-get`:  
+- tree
+- tmux
+- python-pip
+
+### Through `pip`:  
+- virtualenv
