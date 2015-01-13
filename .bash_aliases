@@ -35,6 +35,9 @@ alias gfa='gf --all'
 alias gr='git reset'
 alias grhom='gr --hard origin/master'
 
+# single command to reset current repo to origin/master
+alias gu='gfa && grhom'
+
 ################
 
 # virtualenv aliases
