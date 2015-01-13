@@ -61,7 +61,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 
-set undofile
+"set undofile
 " undofile tells Vim to create <FILENAME>.un~ files whenever you edit a
 " file. These files contain undo information so you can undo previous
 " actions even after you close and reopen a file.
