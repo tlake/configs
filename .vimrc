@@ -1,12 +1,15 @@
 " Settings I've defined myself:
 
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 set number
 set relativenumber
 set cursorline
 set tabstop=4
 set shiftwidth=4
 set expandtab
-syntax on
 syntax enable
 set background=dark
 colorscheme elflord
@@ -23,18 +26,6 @@ set runtimepath+=$HOME/.vim/write.vim
 
 " SETTINGS FROM STEVE LOSH'S TUTORIAL:
 " ( http://stevelosh.com/blog/2010/09/coming-home-to-vim/ )
-
-
-" The filetype and call lines are for loading Pathogen, which is described
-" in the bundles section. See Pathogen’s docs to learn about why the first
-" filetype line is there.
-
-" COMMENTED OUT BECAUSE I DON'T USE PATHOGEN
-
-" filetype off
-" call pathogen#runtime_append_all_bundles()
-" filetype plugin indent on
-
 
 " set nocompatible gets rid of all the crap that Vim does to be vi
 " compatible. It’s 2010 — we don’t need to be compatible with vi at the
@@ -69,9 +60,6 @@ set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
-
-" UNSET LASTSTATUS AS I DON'T ENJOY THE BRIGHT WHITE LINE AT THE BOTTOM
-"set laststatus=2
 
 set undofile
 " undofile tells Vim to create <FILENAME>.un~ files whenever you edit a
@@ -134,17 +122,6 @@ set colorcolumn=85
 
 " See :help fo-table and the Vimcasts on soft wrapping and hard wrapping
 " for more information.
-
-
-" Next comes something other TextMate refugees may like:
-
-" COMMENTED OUT BECAUSE I'M NOT A TEXTMATE REFUGEE
-" set list
-" set listchars=tab:▸\ ,eol:¬
-
-" This makes Vim show invisible characters with the same characters that
-" TextMate uses. You might need to adjust your color scheme so they’re
-" not too distracting.
 
 
 " New Vim users will want the following lines to teach them to do

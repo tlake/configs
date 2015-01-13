@@ -36,3 +36,8 @@ alias gr='git reset'
 alias grhom='gr --hard origin/master'
 
 ################
+
+# virtualenv aliases
+
+alias act="source env/bin/activate"
+alias dac="deactivate"
