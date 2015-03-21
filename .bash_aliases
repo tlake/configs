@@ -76,3 +76,21 @@ alias dac="deactivate"
 
 ################################
 ################################
+# heroku aliases
+
+alias gph='git push heroku'
+alias gphm='gph master'
+
+
+################################
+################################
+# other aliases
+
+# create new heroku-ready django project
+#
+# make sure virtualenv has already been run;
+# make sure activated in that env;
+# supply name of project after alias;
+# supply a period to create in wd
+
+alias newdjher='django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile'
