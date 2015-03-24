@@ -93,4 +93,4 @@ alias gphm='gph master'
 # supply name of project after alias;
 # supply a period to create in wd
 
-alias newdjher='django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile'
+alias newdjher='django-admin startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile'
