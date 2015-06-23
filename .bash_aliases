@@ -104,3 +104,16 @@ alias newdjhere='django-admin startproject --template=https://github.com/heroku/
 # -make sure that manage.py has been chmod +x
 
 alias localserver='./manage.py syncdb && ./manage.py collectstatic --noinput && foreman start'
+
+
+################################
+################################
+#Function to deal with the annoying sublime errors
+#Send annoying .output logs to /dev/null
+function sblm
+{
+    nohup sublime $1 >/dev/null 2>&1 &
+} 
+
+#Call my sublime function
+alias sublime="sblm"

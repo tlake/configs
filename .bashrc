@@ -113,3 +113,41 @@ export EDITOR='vim'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+
+################################
+# VirtualEnvWrapper stuff
+################################
+
+export PROJECT_HOME=~/projects
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+
+################################
+# git completion
+################################
+
+# Check out github.com/git/git, then search by tags to find the version that
+# matches the one that you use. Drill down through contrib/completion/ and
+# grab the contents of git-completion.bash. This data goes into the
+# ~/.git-completion.bash file that we source below.
+
+source ~/.git-completion.bash
+
+
+
+################################
+# More prompt customizations: via CF
+################################
+source ~/.git-prompt.sh
+
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWCOLORHINTS=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUPSTREAM="auto"
+Color_Off="\[\033[0m\]"
+Yellow="\[\033[0;33m\]"
+PROMPT_COMMAND='__git_ps1 "${VIRTUAL_ENV:+[$Yellow`basename $VIRTUAL_ENV`$Color_Off]\n}" "${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ " "[%s]\n"'
+
