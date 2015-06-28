@@ -48,6 +48,7 @@ alias sagfm='sagfu ; sagfc'
 ################################
 # git aliases
 
+alias gk='git checkout'
 alias gp='git push'
 alias gl='git pull'
 alias gpo='gp origin'
