@@ -10,3 +10,5 @@
 !.gitconfig
 !relocate
 !README.md
+!.git-completion.bash
+!.git-prompt.sh
