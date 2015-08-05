@@ -151,3 +151,17 @@ Color_Off="\[\033[0m\]"
 Yellow="\[\033[0;33m\]"
 PROMPT_COMMAND='__git_ps1 "${VIRTUAL_ENV:+[$Yellow`basename $VIRTUAL_ENV`$Color_Off]\n}" "${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ " "[%s]\n"'
 
+
+###############################
+# AWS SSH File
+###############################
+if [ -f ~/.aws_bash ]; then
+    . ~/.aws_bash
+fi
+
+###############################
+# Django Environ File
+###############################
+if [ -f ~/.django_environ ]; then
+    . ~/.django_environ
+fi
