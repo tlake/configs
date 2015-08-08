@@ -153,10 +153,10 @@ PROMPT_COMMAND='__git_ps1 "${VIRTUAL_ENV:+[$Yellow`basename $VIRTUAL_ENV`$Color_
 
 
 ###############################
-# AWS SSH File
+# AWS Instance Locations File
 ###############################
-if [ -f ~/.aws_bash ]; then
-    . ~/.aws_bash
+if [ -f ~/.aws_locations ]; then
+    . ~/.aws_locations
 fi
 
 ###############################
