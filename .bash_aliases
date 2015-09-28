@@ -121,3 +121,8 @@ function sblm
 
 #Call my sublime function
 alias sublime="sblm"
+
+###############################
+###############################
+# python3 is default
+alias python="python3"
