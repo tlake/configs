@@ -9,6 +9,7 @@ alias fucking='sudo'
 ################################
 # shell aliases
 
+alias ..="cd .."
 alias lt='ls -ahlt'
 alias ll='ls -alF'
 alias la='ls -A'
@@ -48,30 +49,53 @@ alias sagfm='sagfu ; sagfc'
 ################################
 # git aliases
 
+# checking out
 alias gk='git checkout'
-alias gp='git push'
-alias gpo='gp origin'
-alias gpom='gpo master'
+
+# cloning
+alias gcl="git clone"
+
+# status
+alias gs='git status'
+alias gd='git diff'
+alias gb='git branch'
+alias gba='gb -a'
+
+# fetching
+alias gf='git fetch'
+alias gfa='gf --all'
+
+# pulling
 alias gl='git pull'
 alias glo='gl origin'
 alias glom='glo master'
+
+# adding
 alias ga='git add'
 alias gaa='ga -A'
+
+# committing
 alias gc='git commit'
 alias gcm='gc -m'
-alias gs='git status'
-alias gd='git diff'
-alias gf='git fetch'
-alias gfa='gf --all'
+
+# pushing
+alias gp='git push'
+alias gpo='gp origin'
+alias gpom='gpo master'
+
+# rebasing
+alias grb='git rebase'
+
+# resetting
 alias gr='git reset'
 alias grhom='gr --hard origin/master'
 alias grhod='gr --hard origin/dev'
 
 # single command to reset current repo to origin/master
-alias gu='gfa && grhom'
+alias grm='gfa && grhom'
 
 # single command to do the same for origin/dev
-alias gud='gfa && grhod'
+alias grd='gfa && grhod'
 
 ################################
 ################################
@@ -117,7 +141,31 @@ alias localserver='./manage.py syncdb && ./manage.py collectstatic --noinput && 
 function sblm
 {
     nohup sublime $1 >/dev/null 2>&1 &
-} 
+}
 
 #Call my sublime function
 alias sublime="sblm"
+
+
+###############################
+###############################
+# XIWI for Ubuntu-Within-Chrome
+alias x="xiwi -f -T"
+
+alias nx="nohup xiwi -f -T"
+
+function nohup_wrapper
+{
+    nohup "$@" &>/dev/null &
+}
+
+alias nwx="nohup_wrapper"
+
+
+################################
+################################
+# Pip Aliases
+alias pipi="pip install"
+alias pipir="pipi -r"
+alias pipreq="pipir requirements.txt"
+alias pipip="pipi -U pip setuptools"
