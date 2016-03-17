@@ -165,3 +165,9 @@ fi
 if [ -f ~/.django_environ ]; then
     . ~/.django_environ
 fi
+
+###############################
+# DrJava / Algs4
+###############################
+
+export PATH=$PATH:$HOME/algs4/bin
