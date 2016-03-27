@@ -1,16 +1,5 @@
 # configs
 
-## To Pull Down These Configs:
-
-`git init` in home directory, then:  
-
-```
-git remote add origin http://github.com/tlake/configs  
-git fetch --all  
-git reset --hard origin/master  
-```
-
-
 ### Other Things to Do / Install:
 
 #### terminal:
