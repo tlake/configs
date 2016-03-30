@@ -1,5 +1,26 @@
+[alias]
+    throwitallaway = "!f(){ git reset --hard HEAD && git clean -fd; };f"
+    badapple = "! files=(./*);"\
+                "randfile=\"${files[RANDOM % ${#files[@]}]}\";"\
+                "echo \"BOO!!\" >> $randfile;"\
+                "git reset --soft HEAD;"\
+                "git add $randfile;"\
+                "git commit -m \"OH NO THIS COMMIT SHOULD NOT BE HERE\";"\
+                "echo \"\n\noh dear, something seems to have been committed by mistake...\n\n\";"
+
+    st=status
+    br=branch
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    alias=!git config --list | grep alias
+
+    # Creates a zipped file of the whole repo (git history included) one level up from the current directory
+    panic = !tar cvf ../git_panic.tar .
+#   unstage = reset HEAD --
+    staged = diff --staged
+
+
 [user]
-	email = tanner.lake@gmail.com
-	name = tlake
-[credential]
-	helper = cache --timeout=1800
+    name = Tanner Lake
+    email = tanner.lake@gmail.com
+[core]
+    editor=vim
